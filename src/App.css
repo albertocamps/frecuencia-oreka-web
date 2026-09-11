@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--text);
+
+  background-image: url('./assets/backImage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--bg);
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  width: 100%;
+}

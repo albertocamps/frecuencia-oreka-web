@@ -1,0 +1,156 @@
+.contact-info .contact-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 8px 13px;
+  text-decoration: none;
+  line-height: 1.4;
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.contact-info .contact-link:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.contact-link-icon { width: 18px; height: 18px; flex-shrink: 0; }
+.contact-link strong { display: block; font-size: .84rem; font-weight: 500; }
+.contact-link small { display: block; font-size: .72rem; margin-top: 1px; }
+.contact-link-arrow { margin-left: auto; font-size: 1rem; flex-shrink: 0; }
+
+.contact-info .contact-link--instagram { margin-top: 10px; }
+.contact-location { margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(219, 179, 145, .2); }
+.contact-info .contact-location h3 { margin-top: 0; }
+
+.contact-info .contact-link--whatsapp {
+  border-radius: 999px;
+  color: #f6f2e9;
+  background: rgba(92, 127, 103, .3);
+  border: 1px solid rgba(153, 181, 158, .45);
+  box-shadow: none;
+}
+.contact-info .contact-link--whatsapp:hover { background: rgba(92, 127, 103, .4); }
+
+.contact-info .contact-link--directions {
+  border: 1px solid rgba(219, 179, 145, .48);
+  border-radius: 12px 4px 12px 4px;
+  color: #f5d6b9;
+  background: rgba(199, 162, 124, .15);
+  padding: 8px 12px;
+}
+.contact-pin { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: rgba(219, 179, 145, .14); flex-shrink: 0; }
+.contact-info .contact-link--directions:hover { background: rgba(199, 162, 124, .24); }
+
+.contact-info .contact-link--instagram {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(115deg, rgba(126, 92, 130, .32), rgba(164, 115, 88, .27));
+  border: 1px solid rgba(185, 150, 165, .4);
+  color: #fff3ee;
+  box-shadow: inset 2px 0 0 rgba(228, 187, 167, .45);
+  padding: 8px 13px;
+}
+.contact-info .contact-link--instagram:hover { background: linear-gradient(115deg, rgba(126, 92, 130, .42), rgba(164, 115, 88, .37)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-info .contact-link { transition: none; }
+  .contact-info .contact-link:hover { transform: none; }
+}
+
+.contact-container {
+  width: min(92%, 760px);
+  max-width: 800px;
+  margin: clamp(2.5rem, 8vw, 5rem) auto;
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-family: 'Playfair Display', serif;
+  color: #d1cfcb;
+  margin-bottom: 30px;
+}
+
+.contact-container form {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-container label {
+  color: #d1cfcb;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.9);
+  color: #3e372f;
+
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #c7a27c;
+  box-shadow: 0 0 0 2px rgba(199,162,124,0.3);
+}
+
+.contact-container textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-container button {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+
+  background: #c7a27c;
+  color: white;
+  font-size: 1rem;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-container button:hover:not(:disabled) {
+  background: #b28e66;
+  transform: scale(1.05);
+}
+
+.contact-container button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.contact-container p {
+  text-align: center;
+  margin-top: 15px;
+  color: #d1cfcb;
+}
+
+@media (max-width: 600px) {
+  .contact-container form {
+    padding: 25px;
+  }
+}
