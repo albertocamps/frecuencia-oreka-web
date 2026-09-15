@@ -120,6 +120,15 @@ export default {
   emotional_support_description: 'A space of pause and listening where body and emotion meet.<br/>'+
                                  'Through conscious presence, I support you in what you need to feel, understand, and let go, allowing balance to arise naturally.',
 
+  // ----- FOOTER -----
+  footer_tagline: 'Treat yourself',
+  footer_find_me: 'Where to find me',
+  footer_appointment: 'By appointment only',
+  footer_talk: 'Let’s talk',
+  footer_invitation: 'Have a question or want to book a session? I’d love to hear from you.',
+  footer_whatsapp: 'Message me on WhatsApp',
+  footer_back_top: 'Back to top',
+
   // ----- CONTACT -----
   contact_title: 'Let’s talk',
   contact_form_title: 'Have a question?',

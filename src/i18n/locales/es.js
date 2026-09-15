@@ -119,6 +119,15 @@ export default {
   emotional_support_description: 'Un espacio de pausa y escucha donde cuerpo y emoción se encuentran.<br/>'+
                                  'A través de una presencia consciente, te acompaño en lo que necesitas sentir, comprender y soltar, permitiendo que el equilibrio surja de forma natural.', 
 
+  // ----- FOOTER -----
+  footer_tagline: 'Date el gusto',
+  footer_find_me: 'Dónde encontrarme',
+  footer_appointment: 'Atención con cita previa',
+  footer_talk: 'Hablamos',
+  footer_invitation: '¿Tienes alguna duda o quieres reservar una sesión? Estaré encantada de leerte.',
+  footer_whatsapp: 'Escríbeme por WhatsApp',
+  footer_back_top: 'Volver arriba',
+
   // ----- CONTACTO -----
   contact_title: 'Hablemos',
   contact_form_title: '¿Tienes alguna duda?',

@@ -123,13 +123,6 @@ button:hover { transform: translateY(-2px); }
 @media (max-width: 760px) { .contact-layout { grid-template-columns: 1fr; } }
 .contact-container input, .contact-container textarea { border: 1px solid rgba(255,255,255,.3); border-radius: 12px; background: rgba(255,255,255,.92); }
 
-.footer { margin-top: 3rem; padding: 42px 20px 28px; background: var(--glass-dark); border-radius: 28px 28px 0 0; }
-.container-footer { width: min(92%, 1080px); max-width: none; }
-.footer-grid { gap: 26px; }
-.footer-section { min-width: 190px; }
-.footer-section h4, .footer-section p { color: rgba(250,246,237,.88); }
-.footer-section h4 { font-size: 1.15rem; }
-.footer-section p { font-size: .9rem; line-height: 1.65; }
 
 @media (max-width: 680px) {
   .navbar { border-radius: 20px; padding: 8px 14px; }
@@ -138,7 +131,6 @@ button:hover { transform: translateY(-2px); }
   .section-overlay { border-radius: 22px; }
   .about-card { text-align: center; }
   .about-image { flex-basis: auto; }
-  .footer { text-align: center; }
   .massage-option-grid { grid-template-columns: repeat(2, 1fr); }
   .massage-option:last-child { grid-column: 1 / -1; }
 }
