@@ -4,28 +4,12 @@ import './Contact.css'
 
 function Contact() {
     const { t } = useTranslation();
-    const initialState = {
-        name: '',
-        message: ''
-    }
-    const [formData, setFormData] = useState(initialState);
+    const [message, setMessage] = useState('');
     const handleSubmit = (e) => {
         e.preventDefault();
-        const message = t('contact_whatsapp_message', { name: formData.name.trim(), message: formData.message.trim() });
-        window.open(`https://wa.me/34623028832?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+        if (!message.trim()) return;
+        window.open(`https://wa.me/34623028832?text=${encodeURIComponent(message.trim())}`, '_blank', 'noopener,noreferrer');
     };
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        let newValue = value;
-        if (name === 'phone') {
-            newValue = value.replace(/[^0-9]/g, '');
-        }
-        setFormData({
-            ...formData,
-            [name]: newValue
-        })
-    }
 
     return ( 
         <>
@@ -57,31 +41,21 @@ function Contact() {
                 </a>
                 </section>
             </aside>
-            <form onSubmit={handleSubmit}>
-                <div className="nameForm">
-                    <label htmlFor="name">{t('contact_name')}:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        autoComplete="given-name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
+            <form onSubmit={handleSubmit} aria-labelledby="contact-form-title">
+                <h2 id="contact-form-title">{t('contact_form_title')}</h2>
                 <div className="messageForm">
-                    <label htmlFor="message">{t('contact_message')}:</label>
+                    <label htmlFor="message">{t('contact_message')}</label>
                     <textarea
                         id="message"
                         name="message"
-                        value={formData.message}
-                        onChange={handleChange}
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        aria-describedby="contact-send-note"
                         required
                     />
                 </div>
-                <button type="submit">{t('contact_submit')}</button>
-                <p className="contact-note">{t('contact_send_note')}</p>
+                <button type="submit" disabled={!message.trim()}>{t('contact_submit')}</button>
+                <p id="contact-send-note" className="contact-note">{t('contact_send_note')}</p>
 
             </form>
             </div>

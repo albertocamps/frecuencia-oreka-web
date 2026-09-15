@@ -122,12 +122,10 @@ export default {
 
   // ----- CONTACT -----
   contact_title: 'Let’s talk',
+  contact_form_title: 'Have a question?',
   contact_directions: 'Get directions',
-  contact_send_note: 'WhatsApp will open with your prepared message. You can review it before sending it to me. I look forward to hearing from you.',
-  contact_whatsapp_message: 'Hi Crystal, my name is {{name}}. {{message}}',
-  contact_name: 'Name',
-  contact_phone: 'Phone number',
-  contact_message: 'Message',
-  contact_submit: 'Open WhatsApp',
+  contact_send_note: 'You can review your message before sending it.',
+  contact_message: 'Briefly tell me how I can help you',
+  contact_submit: 'Continue on WhatsApp',
   contact_whatsapp_hint: 'Briefly tell me what you need and I’ll get back to you as soon as possible.',
 };

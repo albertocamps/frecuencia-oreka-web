@@ -121,12 +121,10 @@ export default {
 
   // ----- CONTACTO -----
   contact_title: 'Hablemos',
+  contact_form_title: '¿Tienes alguna duda?',
   contact_directions: 'Cómo llegar',
-  contact_send_note: 'Se abrirá WhatsApp con tu mensaje preparado. Puedes revisarlo antes de enviármelo. Estaré encantada de leerte.',
-  contact_whatsapp_message: 'Hola Crystal, soy {{name}}. {{message}}',
-  contact_name: 'Nombre',
-  contact_phone: 'Número de teléfono',
-  contact_message: 'Mensaje',
-  contact_submit: 'Abrir WhatsApp',
+  contact_send_note: 'Podrás revisar el mensaje antes de enviarlo.',
+  contact_message: 'Cuéntame brevemente en qué puedo ayudarte',
+  contact_submit: 'Continuar por WhatsApp',
   contact_whatsapp_hint: 'Cuéntame brevemente qué necesitas y te responderé lo antes posible.',
 };
