@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import crystal from '../assets/crystal.jpg';
+import crystal from '../assets/crystal-retrato.jpeg';
 import './About.css';
 
 function About() {
@@ -13,7 +13,7 @@ function About() {
 
         <div className="about-card">
           <div className="about-image">
-            <img src={crystal} alt="Sobre mí" />
+            <img src={crystal} alt="Crystal" />
           </div>
 
           <div className="about-text">
