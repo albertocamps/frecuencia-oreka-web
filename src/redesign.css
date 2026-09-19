@@ -28,19 +28,6 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
 button { font-family: inherit; border-radius: 999px; box-shadow: none; }
 button:hover { transform: translateY(-2px); }
 
-.navbar {
-  width: min(92%, 1180px); max-width: none; margin: 10px auto 0 !important; padding: 8px 20px !important;
-  background: rgba(250, 246, 237, .74); border: 1px solid rgba(255,255,255,.5);
-  border-radius: 999px; box-shadow: 0 12px 35px rgba(70, 52, 30, .12);
-  backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
-}
-.navLogo { width: 70px !important; }
-.nav-links { gap: 5px clamp(2px, 1vw, 17px); margin: 5px 0 0 !important; }
-.nav-links li a { color: var(--ink); font-size: .88rem; font-weight: 600; padding: 6px 8px; }
-.nav-links li a::after { background: var(--terracotta); bottom: 0; }
-.nav-links li a:hover { color: var(--terracotta); text-shadow: none; }
-.lang-select, nav select { border: 1px solid var(--line); color: var(--ink); background: rgba(255,255,255,.35); }
-
 .container, .contact-container { width: min(92%, 1080px); max-width: none; margin: clamp(1.25rem, 3vw, 2.75rem) auto !important; }
 .section-overlay, .about-wrapper, .contact-container form {
   border: 1px solid rgba(255,255,255,.42); border-radius: 28px; box-shadow: var(--shadow-soft);
@@ -125,9 +112,6 @@ button:hover { transform: translateY(-2px); }
 
 
 @media (max-width: 680px) {
-  .navbar { border-radius: 20px; padding: 8px 14px; }
-  .navLogo { width: 64px; }
-  .nav-links li a { font-size: .78rem; padding-inline: 4px; }
   .section-overlay { border-radius: 22px; }
   .about-card { text-align: center; }
   .about-image { flex-basis: auto; }

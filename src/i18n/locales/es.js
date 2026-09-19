@@ -1,7 +1,7 @@
 export default {
   // ----- HOME -----
   home_title: 'Frecuencia Oreka',
-  home_description: 'Un espacio de bienestar, escucha y conexión en Donostia – San Sebastián.',
+  home_description: 'Un espacio para escucharte y cuidar de ti.',
   // ----- SOBRE MÍ -----
   about_title: 'Crystal',
   about_location: 'Bienestar y acompañamiento en Donostia – San Sebastián',

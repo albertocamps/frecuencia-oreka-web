@@ -5,7 +5,8 @@
   isolation: isolate;
   display: grid;
   place-items: center;
-  min-height: clamp(430px, 57vw, 570px);
+  height: clamp(360px, calc(100svh - 122px), 570px);
+  min-height: 0;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, .38);
   border-radius: 28px;
@@ -35,7 +36,7 @@
 }
 
 .home-hero-content {
-  width: min(86%, 720px);
+  width: min(94%, 900px);
   padding: clamp(2rem, 6vw, 4.5rem);
   text-align: center;
   color: var(--cream);
@@ -55,8 +56,9 @@
 .home-hero h1 {
   margin: 0 0 1rem;
   color: var(--cream);
-  font-size: clamp(2.6rem, 7vw, 5.2rem);
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
   line-height: .98;
+  white-space: nowrap;
 }
 
 .home-hero p {
@@ -71,13 +73,16 @@
 .home-hero .btn-whatsapp { box-shadow: 0 8px 24px rgba(23, 29, 25, .22); }
 
 @media (max-width: 680px) {
-  .home-hero { min-height: 520px; border-radius: 22px; }
+  .home-hero {
+    height: clamp(400px, calc(100svh - 100px), 620px);
+    min-height: 0;
+    border-radius: 22px;
+  }
   .home-hero-video { object-position: center center; }
   .home-hero-content { width: min(88%, 440px); padding: 2rem 1rem; }
-  .home-hero h1 { font-size: clamp(2.4rem, 14vw, 4rem); }
+  .home-hero h1 { font-size: clamp(2.4rem, 14vw, 4rem); white-space: normal; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .home-hero-video { filter: saturate(.74) sepia(.08) contrast(.96) brightness(.86); }
 }
-

@@ -1,7 +1,7 @@
 export default {
   // ----- HOME -----
   home_title: 'Frecuencia Oreka',
-  home_description: 'A space for wellbeing, listening, and connection in Donostia – San Sebastián.',
+  home_description: 'A space to listen to yourself and care for yourself.',
   
   // ----- ABOUT -----
   about_title: 'Crystal',
