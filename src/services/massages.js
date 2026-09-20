@@ -2,7 +2,8 @@ import imgHolistico from '../assets/MasajeHolisticoCalido.png'
 import imgPiedrasCalientes from '../assets/MasajePiedrasCalientesTatuajes.png'
 import imgAyurbeda from '../assets/MasajeAyurvedaCalido.png'
 import imgQuiromasaje from '../assets/Quiromasaje.jpg'
-import imgPiernas from '../assets/MasajePiernas.jpg'
+import imgDeportivo from '../assets/QuiromasajeDeportivoCrystal.png'
+import imgPiernas from '../assets/MasajePiernasCrystal.png'
 import imgSonoterapia from '../assets/SonoterapiaCalida.png'
 
 const massages = [
@@ -12,7 +13,7 @@ const massages = [
   { id: 'massage_sonotherapy_title', name: 'massage_sonotherapy_title', description: 'massage_sonotherapy_description', duration: 'massage_sonotherapy_duration', price: 'massage_sonotherapy_price', img: imgSonoterapia },
   { id: 'quiromasaje', name: 'quiromasaje_title', description: 'quiromasaje_description', duration: 'quiromasaje_duration', price: 'quiromasaje_price', img: imgQuiromasaje },
   { id: 'masaje-ventosas', name: 'massage_cupping_title', description: 'service_coming_description', duration: 'service_coming_duration', price: 'service_coming_price', img: imgQuiromasaje },
-  { id: 'quiromasaje-deportivo', name: 'sports_massage_title', description: 'service_coming_description', duration: 'service_coming_duration', price: 'service_coming_price', img: imgPiernas },
+  { id: 'quiromasaje-deportivo', name: 'sports_massage_title', description: 'service_coming_description', duration: 'service_coming_duration', price: 'service_coming_price', img: imgDeportivo },
   { id: 'masaje-piernas', name: 'massage_legs_title', description: 'massage_legs_description', duration: 'massage_legs_duration', price: 'massage_legs_price', img: imgPiernas },
 ]
 
