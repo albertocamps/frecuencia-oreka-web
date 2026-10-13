@@ -24,7 +24,7 @@
 }
 
 
-.service-card a {
+.service-card > a:first-child {
   width: 100%;
   text-decoration: none;
   color: inherit;

@@ -1,12 +1,46 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import FrecuenciaOrekaNavbar from '../assets/FrecuenciaOrekaNavbar.png';
 import './Navbar.css';
 
-function Navbar() {
+const sectionIds = {
+  '/': 'inicio',
+  '/sobre-mi': 'sobre-mi',
+  '/masajes': 'masajes',
+  '/tarot': 'tarot',
+  '/acompanamiento-emocional': 'acompanamiento-emocional',
+  '/contact': 'contact',
+};
+
+function Navbar({ compact }) {
   const { t, i18n } = useTranslation();
+  const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [visibleSection, setVisibleSection] = useState(pathname);
+
+  useEffect(() => {
+    if (!compact || !Object.hasOwn(sectionIds, pathname)) return;
+
+    const updateVisibleSection = () => {
+      const threshold = Math.min(window.innerHeight * .3, 220);
+      let current = '/';
+      for (const [path, id] of Object.entries(sectionIds)) {
+        const section = document.getElementById(id);
+        if (section && section.getBoundingClientRect().top <= threshold) current = path;
+      }
+      setVisibleSection(current);
+    };
+
+    const frame = requestAnimationFrame(updateVisibleSection);
+    window.addEventListener('scroll', updateVisibleSection, { passive: true });
+    window.addEventListener('resize', updateVisibleSection);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener('scroll', updateVisibleSection);
+      window.removeEventListener('resize', updateVisibleSection);
+    };
+  }, [compact, pathname]);
 
   const navItems = [
     { to: '/', label: t('navbar_home'), end: true },
@@ -17,13 +51,24 @@ function Navbar() {
     { to: '/contact', label: t('navbar_contact') },
   ];
 
+  const closeAndNavigate = (to) => {
+    setMenuOpen(false);
+    setVisibleSection(to);
+    if (compact && window.location.pathname === to) {
+      document.getElementById(sectionIds[to])?.scrollIntoView({
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   const renderLink = ({ to, label, end }) => (
     <li key={to}>
       <NavLink
         to={to}
         end={end}
-        className={({ isActive }) => `nav-link${isActive ? ' is-active' : ''}`}
-        onClick={() => setMenuOpen(false)}
+        className={({ isActive }) => `nav-link${(compact && Object.hasOwn(sectionIds, pathname) ? visibleSection === to : isActive) ? ' is-active' : ''}`}
+        onClick={() => closeAndNavigate(to)}
       >
         {label}
       </NavLink>
@@ -43,7 +88,7 @@ function Navbar() {
           end
           className="nav-brand"
           aria-label="Frecuencia Oreka"
-          onClick={() => setMenuOpen(false)}
+          onClick={() => closeAndNavigate('/')}
         >
           <img className="navLogo" src={FrecuenciaOrekaNavbar} alt="" />
         </NavLink>

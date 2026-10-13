@@ -1,16 +1,18 @@
 import { useTranslation } from 'react-i18next';
 
 const ButtonWA = () => {
-    const { t } = useTranslation();
-    const phone = '34623028832'
-    return(
-        <button
-            className="btn-whatsapp"
-            onClick={() => window.open(`https://wa.me/${phone}`, '_blank')}
-            >
-                {t('button_reserve')}
-        </button>
-    )
-}
+  const { t } = useTranslation();
 
-export default ButtonWA
+  return (
+    <a
+      className="btn-whatsapp"
+      href="https://wa.me/34623028832"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {t('button_reserve')}
+    </a>
+  );
+};
+
+export default ButtonWA;

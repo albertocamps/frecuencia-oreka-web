@@ -2,8 +2,9 @@ import { useTranslation } from "react-i18next";
 import crystal from '../assets/crystal-retrato.jpeg';
 import './About.css';
 
-function About() {
+function About({ embedded = false }) {
   const { t } = useTranslation();
+  const Heading = embedded ? 'h3' : 'h1';
 
   return (
     <div className="container">
@@ -17,9 +18,11 @@ function About() {
           </div>
 
           <div className="about-text">
-            <h2>{t('about_title')}</h2>
-            <p className="about-location">{t('about_location')}</p>
-            <p>{t('about_text')}</p>
+            <header className="about-heading">
+              <Heading>{t('about_title')}</Heading>
+              <p className="about-location">{t('about_location')}</p>
+            </header>
+            <p className="about-description" dangerouslySetInnerHTML={{ __html: t('about_text') }} />
           </div>
         </div>
 

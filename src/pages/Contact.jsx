@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import './Contact.css'
 
-function Contact() {
+function Contact({ embedded = false }) {
     const { t } = useTranslation();
     const [message, setMessage] = useState('');
     const handleSubmit = (e) => {
@@ -15,7 +15,7 @@ function Contact() {
         <>
         <div className="contact-container">
             <header className="contact-heading">
-                <h1>{t('contact_title')}</h1>
+                {!embedded && <h1>{t('contact_title')}</h1>}
                 <p>{t('contact_whatsapp_hint')}</p>
             </header>
             <div className="contact-layout">

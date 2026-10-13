@@ -146,6 +146,8 @@
 
 @media (max-width: 1020px) {
   .navbar.navbar-compact {
+    position: sticky;
+    top: 8px;
     width: calc(100% - 24px);
     height: 58px;
     margin-top: 10px;

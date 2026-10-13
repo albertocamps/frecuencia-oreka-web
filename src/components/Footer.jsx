@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import logo from '../assets/FrecuenciaOrekaLogo.png';
 import './Footer.css';
@@ -15,11 +15,17 @@ function FooterIcon({ name }) {
   );
 }
 
-function Footer() {
+function Footer({ compact }) {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
   const goToTop = () => {
     window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
     document.querySelector('.navbar a')?.focus({ preventScroll: true });
+  };
+  const goToContact = () => {
+    if (compact && pathname === '/contact') {
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
@@ -27,7 +33,7 @@ function Footer() {
       <div className="container-footer">
         <div className="footer-grid">
           <div className="footer-brand">
-            <Link to="/" className="footer-brand-link" aria-label={t('navbar_home')}>
+            <Link to="/" className="footer-brand-link" aria-label={t('navbar_home')} onClick={() => { if (compact && pathname === '/') goToTop(); }}>
               <span className="footer-symbol" aria-hidden="true">
                 <img src={logo} alt="" width="431" height="579" className="footer-logo" />
               </span>
@@ -62,7 +68,7 @@ function Footer() {
               <FooterIcon name="whatsapp" /><span>{t('footer_whatsapp')}</span><span aria-hidden="true">↗</span>
             </a>
             <span className="footer-phone">+34 623 028 832</span>
-            <Link className="footer-link" to="/contact">{t('navbar_contact')}<span aria-hidden="true">→</span></Link>
+            <Link className="footer-link" to="/contact" onClick={goToContact}>{t('navbar_contact')}<span aria-hidden="true">→</span></Link>
           </section>
         </div>
         <div className="footer-bottom">

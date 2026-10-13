@@ -12,66 +12,97 @@
 .about-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(4px);
   z-index: 1;
 }
 
 .about-card {
   position: relative;
   z-index: 2;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: clamp(1.5rem, 4vw, 2.75rem);
-  flex-wrap: wrap;
-}
-
-.about-image {
-  flex: 0 0 200px;
+  display: grid;
+  grid-template-columns: minmax(0, 200px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.5rem, 3vw, 2rem);
 }
 
 .about-image img {
-  width: 200px;
-  height: 200px;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 3px solid rgba(219, 179, 145, .45);
   border-radius: 50%;
   object-fit: cover;
-  display: block;
-}
-
-.about-text {
-  flex: 1 1 400px;
-  color: #d1cbcb;
-}
-
-.about-text h2 {
-    color: #d1cbcb;
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(1.8rem, 4vw, 2.4rem);
-  margin-bottom: 15px;
-}
-
-.about-text p {
-  font-size: 1.05rem;
-  font-weight: 300;
-  color: #d1cbcb;
-}
-
-.about-card .about-image img {
-  border: 3px solid rgba(219, 179, 145, .45);
   box-shadow: 0 8px 24px rgba(0, 0, 0, .16);
 }
 
-.about-text .about-location {
-  margin-top: -8px;
+.about-text {
+  min-width: 0;
+}
+
+.about-heading :is(h1, h3) {
+  margin: .1rem 0 .7rem;
+  color: var(--cream);
+  font-family: Georgia, serif;
+  font-size: clamp(2.25rem, 5vw, 3.65rem);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -.045em;
+  text-align: left;
+}
+
+.about-heading .about-location {
+  margin: 0 0 1.3rem;
   font-size: 0.92rem;
   font-weight: 600;
   color: #eadbc6;
+  line-height: 1.5;
 }
 
-@media (max-width: 768px) {
+.about-description {
+  margin: 0;
+  color: rgba(250, 246, 237, .86);
+  font-size: 1.04rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.about-description strong {
+  color: #f0c1aa;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
   .about-card {
-    flex-direction: column;
-    text-align: center;
+    grid-template-columns: minmax(0, 112px) minmax(0, 1fr);
+    gap: 1.25rem 1rem;
+  }
+
+  .about-image {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .about-text {
+    display: contents;
+  }
+
+  .about-heading {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+  }
+
+  .about-heading :is(h1, h3) {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+
+  .about-heading .about-location {
+    margin-bottom: 0;
+    font-size: .78rem;
+  }
+
+  .about-description {
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 }

@@ -1,0 +1,137 @@
+@media (max-width: 1020px) {
+  .continuous-section {
+    margin: clamp(2rem, 5vw, 3.5rem) 0;
+    scroll-margin-top: 108px;
+  }
+
+  .continuous-heading {
+    width: min(92%, 1080px);
+    margin: 0 auto 12px;
+    padding: 12px 18px;
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 20px;
+    background: var(--panel-background);
+    backdrop-filter: blur(14px);
+  }
+
+  .continuous-heading h2 {
+    margin: 0;
+    color: var(--cream);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    line-height: 1.2;
+  }
+
+  .continuous-section > .container,
+  .continuous-section > .contact-container {
+    margin-block: 0 !important;
+  }
+
+  .continuous-section .services-heading {
+    margin-bottom: 1.25rem;
+  }
+
+  .continuous-section .services-heading p {
+    margin-bottom: 0;
+  }
+
+  .continuous-page .massages-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(10px, 2vw, 18px);
+  }
+
+  .continuous-page .service-card--compact {
+    min-width: 0;
+    min-height: 0;
+    padding: 10px;
+    border-radius: 17px;
+  }
+
+  .continuous-page .service-card--compact > a:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+  }
+
+  .continuous-page .service-card--compact img {
+    width: 100%;
+    height: clamp(112px, 16vw, 160px);
+    padding: 0;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .continuous-page .service-card--compact h3 {
+    min-height: 0;
+    margin: .65rem .15rem .55rem;
+    color: var(--ink);
+    font-family: Georgia, serif;
+    font-size: clamp(.88rem, 1.8vw, 1.05rem);
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  .continuous-page .service-card-more {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    margin: auto .15rem 0;
+    padding-top: .4rem;
+    border-top: 1px solid var(--line);
+    color: var(--terracotta);
+    font-size: .72rem;
+    font-weight: 700;
+  }
+
+  .continuous-section .contact-heading {
+    padding: .85rem 1.2rem;
+  }
+
+  .continuous-section .contact-heading p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .continuous-section {
+    margin-block: 1.75rem;
+  }
+
+  .continuous-heading {
+    padding: 10px 12px;
+    border-radius: 17px;
+  }
+
+  .continuous-heading h2 {
+    font-size: clamp(1.25rem, 5.5vw, 1.6rem);
+  }
+
+  .continuous-page #contact .contact-heading,
+  .continuous-page #contact form {
+    display: none;
+  }
+
+  .continuous-page #contact .contact-layout {
+    display: block;
+  }
+
+  .continuous-page .massages-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .continuous-page .service-card--compact {
+    padding: 8px;
+  }
+
+  .continuous-page .service-card--compact img {
+    height: clamp(90px, 28vw, 145px);
+  }
+
+  .continuous-page .service-card--compact h3 {
+    font-size: clamp(.8rem, 3.7vw, .98rem);
+  }
+}

@@ -18,7 +18,7 @@
   overflow: hidden;
 }
 
-.section-overlay::before {
+.massage-details::before {
   content: "";
   position: absolute;
   top: 0; left: 0;
