@@ -66,6 +66,7 @@ function Navbar({ compact }) {
     <li key={to}>
       <NavLink
         to={to}
+        state={compact ? { smoothScroll: true } : null}
         end={end}
         className={({ isActive }) => `nav-link${(compact && Object.hasOwn(sectionIds, pathname) ? visibleSection === to : isActive) ? ' is-active' : ''}`}
         onClick={() => closeAndNavigate(to)}
@@ -85,6 +86,7 @@ function Navbar({ compact }) {
       <div className="nav-container">
         <NavLink
           to="/"
+          state={compact ? { smoothScroll: true } : null}
           end
           className="nav-brand"
           aria-label="Frecuencia Oreka"

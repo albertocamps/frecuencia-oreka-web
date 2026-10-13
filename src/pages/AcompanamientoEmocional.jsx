@@ -8,7 +8,7 @@ function AcompañamientoEmocional({ embedded = false }) {
     return (
         <div className="container">
             <div className="section-overlay emotional-support-section">
-                <span className="eyebrow">Escucha · Cuidado · Equilibrio</span>
+                <span className="eyebrow">{t('emotional_support_tagline')}</span>
                 <Heading>{t('emotional_support_title')}</Heading>
                 <p dangerouslySetInnerHTML={{ __html: t('emotional_support_description') }} />
                 <div className="buttonWA-container">

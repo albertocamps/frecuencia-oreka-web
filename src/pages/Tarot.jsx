@@ -8,7 +8,7 @@ function Tarot({ embedded = false }) {
     return (
         <div className="container">
             <div className="section-overlay tarot-section">
-                <span className="eyebrow">Claridad · Intuición · Presencia</span>
+                <span className="eyebrow">{t('tarot_tagline')}</span>
                 <Heading>{t('tarot_title')}</Heading>
                 <p dangerouslySetInnerHTML={{ __html: t('tarot_description') }} />
                 <div className="buttonWA-container">

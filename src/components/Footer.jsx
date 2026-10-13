@@ -73,7 +73,7 @@ function Footer({ compact }) {
         </div>
         <div className="footer-bottom">
           <small>© {new Date().getFullYear()} <span translate="no">Frecuencia Oreka</span></small>
-          <button className="footer-back-top" type="button" onClick={goToTop}>{t('footer_back_top')}<FooterIcon name="up" /></button>
+          {!compact && (<button className="footer-back-top" type="button" onClick={goToTop}>{t('footer_back_top')}<FooterIcon name="up" /></button>)}
         </div>
       </div>
     </footer>

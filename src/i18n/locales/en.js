@@ -1,4 +1,7 @@
 export default {
+  wellbeing_tagline: "Treat yourself",
+  tarot_tagline: "Clarity · Intuition · Presence",
+  emotional_support_tagline: "Listening · Care · Balance",
   skip_to_content: 'Skip to content',
   not_found_title: 'This page does not exist',
   not_found_description: 'The link may have changed. You can return home and keep exploring.',
@@ -10,7 +13,7 @@ export default {
   // ----- ABOUT -----
   about_title: 'Crystal',
   about_location: 'Wellbeing and support in Donostia – San Sebastián',
-  about_text: "I’m Crystal, a <strong>holistic therapist, sports massage therapist, and Ayurveda and Abhyanga massage practitioner</strong>. I support each person through <strong>listening, presence, and a holistic approach to wellbeing</strong>, making room for both your body and how you feel.<br/><br/>My approach combines bodywork with attentive, conscious care. <strong>I adapt each session to your needs and your current circumstances</strong>, respecting your pace and creating a space where you can rest, release tension, and reconnect with yourself.<br/><br/>At Frecuencia Oreka, I welcome you into a caring space in <strong>Donostia – San Sebastián</strong>, where you can pause and make time for your wellbeing.",
+  about_text: "I’m Crystal, a <strong>holistic therapist, Ayurvedic Abhyanga massage practitioner, and sports massage therapist</strong>. I support each person through <strong>listening, presence, and a holistic approach to wellbeing</strong>, making room for both your body and how you feel.<br/><br/>My approach combines bodywork with attentive, conscious care. <strong>I adapt each session to your needs and your current circumstances</strong>, respecting your pace and creating a space where you can rest, release tension, and reconnect with yourself.<br/><br/>At Frecuencia Oreka, I welcome you into a caring space in <strong>Donostia – San Sebastián</strong>, where you can pause and make time for your wellbeing.",
 
   // ----- NAVBAR -----
   navbar_home: 'Home',
@@ -50,7 +53,7 @@ export default {
   massage_hot_stones_title: 'Hot stone massage',
   massage_cupping_title: 'Cupping massage',
   sports_massage_title: 'Sports massage',
-  massage_hot_stones_description: "An enveloping massage combining <strong>the warmth of stones with gentle, conscious movements</strong>. Warmth helps relax muscles and supports local blood flow, accompanying a sense of calm and rest.<br/><br/>In lymphatic massage, <strong>gentle, rhythmic, targeted movements</strong> support lymph flow and may help reduce swelling when appropriate. This effect comes from the drainage technique, rather than the warmth of the stones.<br/><br/>Each session is adapted to your sensitivity and your body’s needs, carefully adjusting temperature, pressure, and pace to offer a warm, comforting experience.",
+  massage_hot_stones_description: "An enveloping massage combining <strong>the warmth of stones with gentle, conscious movements</strong>. Warmth helps relax muscles and supports local blood flow, accompanying a sense of calm and rest.<br/><br/>Each session is adapted to your sensitivity and your body’s needs, carefully adjusting temperature, pressure, and pace to offer you a unique experience.",
   massage_cupping_description: "Bodywork combining manual techniques with cupping, creating controlled suction on the skin to work on areas of tension.<br/><br/>Each session is adapted to your needs, adjusting intensity and application to how your tissues respond and to your comfort, with attentive respect for your body.<br/><br/>A caring space to explore a different form of massage and reconnect with your body’s sensations. Cupping may leave temporary marks on the skin, which are explained before the session begins.",
   sports_massage_description: "A massage focused on caring for the muscles of people who practise sports or lead an active life. It combines manual massage techniques and adapted pressure to work on tension associated with physical effort.<br/><br/>Each session takes into account your activity, the areas under the greatest strain, and your current circumstances, adapting intensity to your body’s condition.<br/><br/>Conscious care to ease the feeling of muscular strain, support muscle rest, and accompany your wellbeing between training sessions.",
   massage_ayurveda_description: 'Enjoy a traditional Indian massage. Harmonize your physical, mental, and energetic body.<br/><br/>Through natural oils and gentle movements, I help you release tension and restore vitality throughout your being.',

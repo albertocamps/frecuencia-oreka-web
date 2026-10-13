@@ -25,7 +25,7 @@ function Home() {
           <source src={homeVideoDesktop} type="video/mp4" />
         </video>
         <div className="home-hero-content">
-          <span className="home-hero-eyebrow" translate="no">Date el gusto</span>
+          <span className="home-hero-eyebrow">{t('wellbeing_tagline')}</span>
         <h1>{t('home_title')}</h1>
         <p>{t('home_description')}</p>
         <div className="home-actions">

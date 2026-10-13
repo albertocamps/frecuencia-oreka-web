@@ -5,6 +5,7 @@ import RoutesApp from './routes/RoutesApp'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+import BackToTop from './components/BackToTop'
 import massages from './services/massages'
 import useCompactLayout from './hooks/useCompactLayout'
 
@@ -55,6 +56,7 @@ function App() {
         <RoutesApp compact={compact} />
       </main>
       <Footer compact={compact} />
+      {compact && <BackToTop />}
     </>
   )
 }

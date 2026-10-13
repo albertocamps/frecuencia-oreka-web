@@ -1,4 +1,7 @@
 export default {
+  wellbeing_tagline: "Date el gusto",
+  tarot_tagline: "Claridad · Intuición · Presencia",
+  emotional_support_tagline: "Escucha · Cuidado · Equilibrio",
   skip_to_content: 'Saltar al contenido',
   not_found_title: 'Esta página no existe',
   not_found_description: 'Quizá el enlace ha cambiado. Puedes volver al inicio y seguir explorando.',
@@ -9,7 +12,7 @@ export default {
   // ----- SOBRE MÍ -----
   about_title: 'Crystal',
   about_location: 'Bienestar y acompañamiento en Donostia – San Sebastián',
-  about_text: "Soy Crystal, <strong>terapeuta holística, quiromasajista deportivo y masajista ayurveda y abhyanga</strong>. Acompaño a cada persona desde la <strong>escucha, la presencia y una mirada integral del bienestar</strong>, dando espacio tanto al cuerpo como a cómo te sientes.<br/><br/>Mi forma de trabajar combina el cuidado corporal con una atención cercana y consciente. <strong>Adapto cada sesión a tus necesidades y a tu momento</strong>, respetando tu ritmo y creando un espacio donde puedas descansar, soltar tensiones y volver a conectar contigo.<br/><br/>En Frecuencia Oreka te recibo en un entorno cuidado en <strong>Donostia – San Sebastián</strong>, donde regalarte una pausa y dedicar tiempo a tu bienestar.",
+  about_text: "Soy Crystal, <strong>terapeuta holística, masajista ayurveda abhyanga y quiromasajista deportivo</strong>. Acompaño a cada persona desde la <strong>escucha, la presencia y una mirada integral del bienestar</strong>, dando espacio tanto al cuerpo como a cómo te sientes.<br/><br/>Mi forma de trabajar combina el cuidado corporal con una atención cercana y consciente. <strong>Adapto cada sesión a tus necesidades y a tu momento</strong>, respetando tu ritmo y creando un espacio donde puedas descansar, soltar tensiones y volver a conectar contigo.<br/><br/>En Frecuencia Oreka te recibo en un entorno cuidado en <strong>Donostia – San Sebastián</strong>, donde regalarte una pausa y dedicar tiempo a tu bienestar.",
 
   // ----- NAVBAR -----
   navbar_home: 'Inicio',
@@ -49,7 +52,7 @@ export default {
   massage_hot_stones_title: 'Masaje con piedras calientes',
   massage_cupping_title: 'Masaje con ventosas',
   sports_massage_title: 'Quiromasaje deportivo',
-  massage_hot_stones_description: "Un masaje envolvente que combina el <strong>calor de las piedras con maniobras suaves y conscientes</strong>. El calor ayuda a relajar la musculatura y favorece el flujo sanguíneo local, acompañando una sensación de calma y descanso.<br/><br/>En el masaje linfático, las <strong>maniobras suaves, rítmicas y específicas</strong> favorecen el movimiento de la linfa y pueden ayudar a reducir la hinchazón cuando están indicadas. Este efecto depende de la técnica de drenaje, no del calor de las piedras.<br/><br/>Cada sesión se adapta a tu sensibilidad y a las necesidades de tu cuerpo, cuidando la temperatura, la presión y el ritmo para ofrecerte una experiencia cálida y reconfortante.",
+  massage_hot_stones_description: "Un masaje envolvente que combina el <strong>calor de las piedras con maniobras suaves y conscientes</strong>. El calor ayuda a relajar la musculatura y favorece el flujo sanguíneo local, acompañando una sensación de calma y descanso.<br/><br/>Cada sesión se adapta a tu sensibilidad y a las necesidades de tu cuerpo, cuidando la temperatura, la presión y el ritmo para ofrecerte una experiencia única.",
   massage_cupping_description: "Un trabajo corporal que combina técnicas manuales con la aplicación de ventosas, creando una succión controlada sobre la piel para trabajar las zonas de tensión.<br/><br/>Cada sesión se adapta a tus necesidades, ajustando la intensidad y la forma de aplicación a la respuesta de los tejidos y a tu comodidad, desde una escucha atenta y respetuosa del cuerpo.<br/><br/>Un espacio de cuidado para explorar una forma diferente de masaje y reconectar con tus sensaciones corporales. La aplicación puede dejar marcas temporales en la piel, que se explican antes de comenzar la sesión.",
   sports_massage_description: "Un masaje enfocado en el cuidado de la musculatura de quienes practican deporte o mantienen una vida activa. Combina maniobras de quiromasaje y presiones adaptadas para trabajar las tensiones asociadas al esfuerzo físico.<br/><br/>Cada sesión tiene en cuenta tu actividad, las zonas que acumulan mayor carga y el momento en el que te encuentras, ajustando la intensidad al estado de tu cuerpo.<br/><br/>Un cuidado consciente para aliviar la sensación de sobrecarga, favorecer el descanso muscular y acompañar tu bienestar entre entrenamientos.",
   massage_ayurveda_description: 'Disfruta del masaje tradicional hindú. Armoniza cuerpo físico, mental y energético.<br/><br/>A través de aceites naturales y movimientos suaves, te ayudo a liberar tensiones y recuperar vitalidad en todo tu ser.',

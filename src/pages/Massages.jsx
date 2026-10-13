@@ -9,7 +9,7 @@ function Massages({ embedded = false }) {
         <div className="container">
             <div className="section-overlay massages-section">
                 <div className="services-heading">
-                    <span className="eyebrow">Date el gusto</span>
+                    <span className="eyebrow">{t('wellbeing_tagline')}</span>
                     {!embedded && <h1>{t('navbar_massages')}</h1>}
                     <p>{t('massages_intro')}</p>
                 </div>

@@ -34,13 +34,14 @@ function ContinuousPage() {
   const { pathname, state } = useLocation()
 
   useEffect(() => {
+    const behavior = state?.smoothScroll && !window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'smooth' : 'instant'
     const frame = requestAnimationFrame(() => {
       if (Number.isFinite(state?.restoreScrollY)) {
         window.scrollTo({ top: state.restoreScrollY, behavior: 'instant' })
       } else if (pathname === '/') {
-        window.scrollTo({ top: 0, behavior: 'instant' })
+        window.scrollTo({ top: 0, behavior })
       } else {
-        document.getElementById(sectionIds[pathname])?.scrollIntoView({ behavior: 'instant', block: 'start' })
+        document.getElementById(sectionIds[pathname])?.scrollIntoView({ behavior, block: 'start' })
       }
     })
     return () => cancelAnimationFrame(frame)

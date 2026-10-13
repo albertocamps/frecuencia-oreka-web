@@ -44,7 +44,7 @@ function MassageDetails() {
             >
                 <div className="massage-detail-content">
                     <Link className="back-to-massages" to="/masajes" state={backState}>← {t('back_to_massages')}</Link>
-                    <span className="eyebrow">Date el gusto</span>
+                    <span className="eyebrow">{t('wellbeing_tagline')}</span>
                     <h1>{t(massage.name)}</h1>
                     <p className="massage-detail-description" dangerouslySetInnerHTML={{ __html: t(massage.description) }} />
                     {isHolistic ? <div className="massage-benefits">
