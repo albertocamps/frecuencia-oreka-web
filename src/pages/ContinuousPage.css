@@ -67,9 +67,10 @@
     min-height: 0;
     margin: .65rem .15rem .55rem;
     color: var(--ink);
-    font-family: Georgia, serif;
-    font-size: clamp(.88rem, 1.8vw, 1.05rem);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.06rem, 2vw, 1.18rem);
     font-weight: 600;
+    letter-spacing: -.02em;
     line-height: 1.25;
     text-align: left;
   }
@@ -132,6 +133,6 @@
   }
 
   .continuous-page .service-card--compact h3 {
-    font-size: clamp(.8rem, 3.7vw, .98rem);
+    font-size: clamp(1.02rem, 3.5vw, 1.15rem);
   }
 }
