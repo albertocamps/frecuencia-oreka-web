@@ -113,10 +113,13 @@ export default {
 
   // ----- ACOMPAÑAMIENTO EMOCIONAL -----
   emotional_support_title: 'Acompañamiento en restauración psicosomática',
-  emotional_support_description: 'Un espacio de pausa y escucha donde cuerpo y emoción se encuentran.<br/>'+
-                                 'A través de una presencia consciente, te acompaño en lo que necesitas sentir, comprender y soltar, permitiendo que el equilibrio surja de forma natural.<br/><br/>'+
-                                 'Ofrezco sesiones <strong>presenciales</strong> en <span class="session-location">Donostia – San Sebastián</span> '+
-                                 'u <strong>online</strong>, adaptándome a tu tiempo y lugar.',
+  emotional_support_description: '<strong>Transitar el laberinto de nuestra mente empieza por escuchar lo que nos habita.</strong><br/><br/>' +
+                                 'A veces sentimos un malestar que no sabemos explicar, repetimos patrones que nos limitan o convivimos con sensaciones que parecen haber quedado inconclusas. No siempre encontramos palabras ni respuestas para comprender lo que nos sucede.<br/><br/>' +
+                                 'Mi forma de acompañar nace de las experiencias y herramientas que he ido integrando a lo largo de los años. Desde una <strong>mirada holística e integral</strong>, atiendo a la relación entre el cuerpo, las emociones y nuestra historia personal, dando lugar también a aquello que llamamos <strong>subconsciente</strong>: formas de sentir, reaccionar y relacionarnos que no siempre reconocemos conscientemente.<br/><br/>' +
+                                 'Integro recursos de <strong>bioenergética, movimiento, expresión emocional, respiración consciente y meditación</strong>, adaptándolos a cada encuentro. Te acompaño a explorar sensaciones, bloqueos y creencias limitantes, a reconocer tus necesidades y a encontrar nuevas formas de expresar lo que sientes.<br/><br/>' +
+                                 'Este recorrido se construye contigo, <strong>respetando tu ritmo y tus límites</strong>, sin forzar recuerdos ni respuestas. Una invitación a conocerte con mayor profundidad y descubrir recursos de cuidado que puedas llevar a tu vida cotidiana.<br/><br/>' +
+                                 'Ofrezco sesiones <strong>presenciales</strong> en <span class="session-location">Donostia – San Sebastián</span> u <strong>online</strong>, adaptándome a tu tiempo y lugar.<br/><br/>' +
+                                 '<em>Hacer terapia es permitir que los rayos de luz clarezcan sobre las nubosidades de tus cielos, para así dar calidez a la historia que te acompaña.</em>',
 
   // ----- FOOTER -----
   footer_tagline: 'Date el gusto',

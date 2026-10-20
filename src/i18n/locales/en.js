@@ -114,10 +114,13 @@ export default {
 
   // ----- EMOTIONAL SUPPORT -----
   emotional_support_title: 'Support in psychosomatic restoration',
-  emotional_support_description: 'A space of pause and listening where body and emotion meet.<br/>'+
-                                 'Through conscious presence, I support you in what you need to feel, understand, and let go, allowing balance to arise naturally.<br/><br/>'+
-                                 'I offer sessions <strong>in person</strong> in <span class="session-location">Donostia – San Sebastián</span> '+
-                                 'or <strong>online</strong>, adapting to your time and location.',
+  emotional_support_description: '<strong>Finding our way through the labyrinth of the mind begins with listening to what lives within us.</strong><br/><br/>' +
+                                 'Sometimes we feel a discomfort we cannot explain, repeat patterns that limit us, or live with feelings that seem unresolved. We do not always find the words or answers to understand what we are experiencing.<br/><br/>' +
+                                 'My approach to support grows from the experiences and tools I have brought together over the years. From a <strong>holistic and integrated perspective</strong>, I attend to the relationship between the body, emotions and our personal history, also making room for what we call the <strong>subconscious</strong>: ways of feeling, reacting and relating that we do not always consciously recognise.<br/><br/>' +
+                                 'I draw on <strong>bioenergetics, movement, emotional expression, conscious breathing and meditation</strong>, adapting them to each encounter. I support you in exploring sensations, blocks and limiting beliefs, recognising your needs and finding new ways to express how you feel.<br/><br/>' +
+                                 'We shape this journey together, <strong>respecting your pace and boundaries</strong>, without forcing memories or answers. An invitation to know yourself more deeply and discover ways of caring for yourself that you can bring into everyday life.<br/><br/>' +
+                                 'I offer sessions <strong>in person</strong> in <span class="session-location">Donostia – San Sebastián</span> or <strong>online</strong>, adapting to your time and location.<br/><br/>' +
+                                 '<em>Beginning therapy is allowing rays of light to break through the clouds of your skies, bringing warmth to the story you carry with you.</em>',
 
   // ----- FOOTER -----
   footer_tagline: 'Treat yourself',
